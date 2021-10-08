@@ -1,0 +1,27 @@
+{
+  "name": "backend-ciclo3-mintic",
+  "version": "1.0.0",
+  "description": "Backend para un aplicativo de gestion de ventas",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielzemanate/Backend-Ciclo3-MinTic.git"
+  },
+  "author": "danielzemanate@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielzemanate/Backend-Ciclo3-MinTic/issues"
+  },
+  "homepage": "https://github.com/danielzemanate/Backend-Ciclo3-MinTic#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}

@@ -3,11 +3,27 @@
 
 // hacer el nuevo import
 import Express from 'express';
+import Cors from 'cors';
+import dotenv from 'dotenv';
+import { dataBaseConnection } from './db/db.js';
+import usersRoutes from './views/users/routes.js';
+
+//VARIABLES DE ENTORNO
+dotenv.config({ path: './.env' });
 
 const app = Express();
 
 app.use(Express.json());
+app.use(Cors());
 
-app.listen(5000, () => {
-  console.log('escuchando puerto 5000');
-});
+//USE PARA LAS RUTAS
+app.use(usersRoutes);
+
+
+const main = () => {
+  return app.listen(process.env.PORT, () => {
+    console.log(`Listening at the port ${process.env.PORT}!`);
+  });
+};
+
+dataBaseConnection(main);

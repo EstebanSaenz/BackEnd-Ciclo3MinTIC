@@ -36,8 +36,8 @@ getProduct(req.params.id, genercCallback(res));
 });
 
 //EDITAR PRODUCTO
-// usersRoutes.route('/users/update').patch((req, res) => {
-//     userUpdate(req.body, genercCallback(res));
+// productsRoutes.route('/products/update').patch((req, res) => {
+//     productUpdate(req.body, genercCallback(res));
 // });
 
 //EDITAR PRODUCTO

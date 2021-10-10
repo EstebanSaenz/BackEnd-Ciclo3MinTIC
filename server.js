@@ -7,6 +7,8 @@ import Cors from 'cors';
 import dotenv from 'dotenv';
 import { dataBaseConnection } from './db/db.js';
 import usersRoutes from './views/users/routes.js';
+import productsRoutes from './views/products/routes.js'
+import salesRoutes from './views/sales/routes.js';
 
 //VARIABLES DE ENTORNO
 dotenv.config({ path: './.env' });
@@ -18,6 +20,8 @@ app.use(Cors());
 
 //USE PARA LAS RUTAS
 app.use(usersRoutes);
+app.use(productsRoutes);
+app.use(salesRoutes);
 
 
 const main = () => {
